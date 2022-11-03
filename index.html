@@ -5,24 +5,105 @@
   <meta charset="UTF-8">
   <title>Larissa and Racheal</title>
   <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+    body{
+    background-color: rgba(235, 222, 222, 0.819);
+    background-size: cover;
+    background-position: center;
+
+}
+
+  #nav-bar{
+    justify-content: space-between;
+    display: flex;
+    align-content: center;
+  }
+  #header {
+    background-color: white;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  header * {
+    display: inline;
+  }
+  .nav-link { 
+      align-self: center;
+  }
+
+  #email {
+    margin-bottom: 30px;
+    margin-top: 100px;
+    width: 400px;
+    padding: 20px;
+    background-color: antiquewhite;
+    border: 0;
+
+  }
+  #form{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #submit {
+    padding: 20px;
+    font-family: Arial;
+    color:red;
+    border: 2px;
+    width: 150px;
+  }
+  .video-div {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+  }
+
+  #header-img {
+    align-self: flex-start;
+  }
+  </style>
 </head>
 
 <body>
-  <header id="header">
-    <img src="" alt="image" id="header-img">
-    <nav id="nav-bar">
-      <a href="#" class="nav-link">LINK1</a>
-      <a href="#" class="nav-link">LINK2</a>
-      <a href="#" class="nav-link">LINK3</a>
-    </nav>
-  </header>
-  <main>
-    <a action="" id="form">
-      <input type="email" name="" id="email" placeholder="Enter your email here">
-      <a href="https://www.freecodecamp.com/email-submit"><input type="submit" value="submit" id="submit"></a>
-      </form>
-      <video src="" id="video"></video>
-  </main>
+<header id="header">
+  <img src="assets/image.jpg" height=80px, alt="logo" id="header-img">
+  <nav id="nav-bar">
+    <ul class="nav-link">
+      <li><a href="#" class="nav-link">Features</a></li>
+      <li><a href="#" class="nav-link">How it works</a></li>
+      <li><a href="#" class="nav-link">Pricing</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <form action="https://www.freecodecamp.com/email-submit" id='form'> 
+    <input type="email" name="" id="email" placeholder="Enter your email here">
+    <button type="submit" value="submit" id="submit">Submit</button>
+  </form>
+  <div class="video-div">
+    <video controls width="250">
+      <source src="https://www.youtube.com/watch?v=8mceJBrgUkQ"
+              type="video/webm">
+  </video>
+  </div>
+</main>
+
+
+    
+  
   <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <script  src="js/index.js"></script> -->
 </body>
